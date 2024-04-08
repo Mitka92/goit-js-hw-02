@@ -6,6 +6,13 @@ function checkForSpam(message) {
     return true;
   }
   return false;
+
+  /************************************Variant 2*****************************/
+
+  // return message.toLowerCase().includes("spam") ||
+  //   message.toLowerCase().includes("sale")
+  //   ? true
+  //   : false;
 }
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
